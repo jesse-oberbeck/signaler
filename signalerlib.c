@@ -9,6 +9,8 @@ extern int exit_flag = 0;
 
 unsigned int handle_args(int argc, char * argv[], unsigned int end)
 {
+    //Processes arguments passed on the command line.
+
     if (argc < 2) {
         return(2);
     }
@@ -39,6 +41,9 @@ unsigned int handle_args(int argc, char * argv[], unsigned int end)
 
 void handler (int sig_num)
 {
+
+    //Catch and react to signals.
+
     if (sig_num == SIGHUP) {
         num = 3;
         reverse_flag = 0;
