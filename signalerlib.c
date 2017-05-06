@@ -3,10 +3,10 @@
 #include <stdlib.h>
 #include "signalerlib.h"
 
-extern unsigned int num = 3;
-extern int reverse_flag = 0;
-extern int skip_flag = 0;
-extern int exit_flag = 0;
+unsigned int num = 3;
+int reverse_flag = 0;
+int skip_flag = 0;
+int exit_flag = 0;
 
 unsigned int handle_args(int argc, char * argv[], unsigned int end)
 {
