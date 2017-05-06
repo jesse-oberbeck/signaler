@@ -20,7 +20,8 @@ int main(int argc, char * argv[])
         signal(SIGUSR1, handler);
         signal(SIGUSR2, handler);
 
-        //Prime generator.
+        //Prime generator. 
+        //http://www.programmingsimplified.com/c/source-code/c-program-for-prime-number
         for (c = 2 ;c <= num - 1; c++) {
             if (num % c == 0) {
                 break;
