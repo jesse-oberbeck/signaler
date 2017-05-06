@@ -1,6 +1,7 @@
 #include <string.h>
 #include <signal.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "signalerlib.h"
 
 unsigned int num = 3;
