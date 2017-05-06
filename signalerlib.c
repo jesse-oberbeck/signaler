@@ -1,5 +1,6 @@
 #include <string.h>
 #include <signal.h>
+#include <stdlib.h>
 #include "signalerlib.h"
 
 extern unsigned int num = 3;
@@ -24,16 +25,12 @@ unsigned int handle_args(int argc, char * argv[], unsigned int end)
 
         if (strncmp(cur, "-s", 2) == 0){
             unsigned int start = strtol(argv[i + 1], NULL, 10);
-            if (start >= 0) {
-                num = start;
-            }
+            num = start;
         }
 
         if (strncmp(cur, "-e", 2) == 0) {
             end = strtol(argv[i + 1], NULL, 10);
-            if (end >= 0) {
-                exit_flag = 1;
-            }
+            exit_flag = 1;
         }
     }
     return(end);

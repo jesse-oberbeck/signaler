@@ -2,16 +2,8 @@
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 #include <limits.h>
 #include "signalerlib.h"
-
-//Global because they need to be accessed by signal.
-extern unsigned int num;
-extern int reverse_flag;
-extern int skip_flag;
-extern int exit_flag;
-
 
 
 int main(int argc, char * argv[])
