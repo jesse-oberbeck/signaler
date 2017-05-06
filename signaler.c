@@ -44,7 +44,7 @@ int main(int argc, char * argv[])
             }
             num--;
         } else {
-            if ((num > exit_num && exit_flag == 1) || (num >= UINT_MAX - 266)){
+            if ((num >= exit_num && exit_flag == 1) || (num >= UINT_MAX - 266)){
                 //UINT_MAX - 266 is the last prime possible in the data type.
                 exit(0);
             }
